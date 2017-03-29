@@ -5,4 +5,4 @@ Overall, the website functions well, but I'd like to spend some time creating it
 
 The functionality was a long process, but once I figured out the mySQL database, it was fairly simple working with sessions and the functions I created in dao.php.
 
-Take note, that bookwormArchives has a bug. When you add the same book to the database and then try to delete them, it won't delete either of the books. I am currently working on a way to fix that by ensuring that a book can only be inserted once in the database. I can also do some debugging and find why it won't delete both books through the deleteBook method in the dao.php file.
+Take note, that bookwormArchives has a bug. When you add the same book to the database and then try to delete them, it won't delete either of the books. I am currently working on a way to fix by ensuring that a book can only be inserted once in the database. I can also do some debugging and find why it won't delete both books through the deleteBook method in the dao.php file.
