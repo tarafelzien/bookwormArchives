@@ -1,0 +1,320 @@
+/*CSS file*/
+
+/*Header Style Section*/
+.header1{
+/*    height: 8%; Controls the height of the header*/
+    padding-bottom: 10px;
+/*    background-color: transparent;*/
+}
+
+div.headerDiv{
+    width: 100%;
+    background: rgba(00, 00, 00, 0.5);
+    height: 13%;
+    display: inline-block;
+    position:absolute; 
+    left: 0; right:0; bottom:0; top: 0;
+}
+
+#footer{
+    position: absolute;
+    bottom:0;
+    color: #FFFFFF
+}
+
+#centerText{
+    text-align: center;
+    font-size: 11px;
+}
+
+#logo{
+    width: 10px;
+    height: 25px;
+}
+
+#logoImg{
+    width: 250px;
+}
+
+#loginForm{
+    float:right;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding-left: 450px;
+}
+
+#title{
+    float:left;
+    width: 70%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    margin-bottom: 65px;
+}
+
+#navi{
+    text-align: center;
+    padding-bottom: 5px;
+    padding-left: 100px;
+}
+
+a:link, a:visited{
+   text-decoration: none;
+   color: #FFFFFF;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#helloUser{
+    text-decoration: none;
+   color: #FFFFFF;
+}
+
+/*General body style sheet*/
+#description{
+    color: #FFFFFF;
+    width: 40%;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 150px;
+    margin-left: 15%;
+    margin-right: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+#description2{
+    color: #FFFFFF;
+    width: 40%;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 30px;
+    margin-left: 15%;
+    margin-right: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+#welcome{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+body{ 
+    background-image:url("bookbackground.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+
+
+ul{
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+  display: inline;
+  padding: 8px;
+}
+
+/*Form stylesheet*/
+
+#commentForm{
+    padding-top: 50px;
+}
+
+/*My Archive Style Sheet*/
+
+#bookError{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px; 
+    margin-right: 5px;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+div.outsideDiv{
+    width: 100%;
+    height: 80%;
+    background: rgba(00, 00, 00, 0.5);
+    display: inline-block;
+    position:absolute; 
+    left: 0; right:0; bottom:0; top: 150px;
+}
+
+#bookFormat{
+    width: 100%;
+}
+#booksIRead{
+    color: #FFFFFF;
+    display: inline-block;
+    padding-left: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 8px;
+    overflow-y: scroll;
+    height: 300px;
+}
+
+tbody{
+   height: 100px;
+    overflow-y: scroll;
+}
+
+
+table{
+    border-collapse: collapse;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+th, td{
+    border-bottom: 1px solid #cecfd5;
+    padding: 10px 15px;
+}
+
+#booksNotRead{
+    color: #FFFFFF;
+    display: inline-block;
+    padding-left: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 8px;
+}
+
+#inputBookForm{
+    color: #FFFFFF;
+    float:right;
+    margin-top: 22px;
+    width: 300px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+table.formTable{
+    float: left;
+    padding-right: 25px;
+    padding-top: 5px;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    font-size: 12px;
+    border-collapse:collapse
+}
+
+#formTitle{
+    float:left;
+}
+
+h2{
+    color: #FFFFFF;
+    padding-left: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+#optionsBookForm{
+    color: #FFFFFF;
+    float:left;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+
+/*
+ CSS File for public archive
+
+#tableDiv{
+    margin-bottom: 50px;
+    display: inline-block;
+}
+
+#content{
+   margin-left: 300px; 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+*/
+
+/*CSS Section for About Us*/
+
+#descriptionAboutUs{
+    color: #FFFFFF;
+    width: 500px;
+    margin-left: 300px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+#pageLink{
+    text-decoration: underline;
+}
+
+/*
+#commentForm{
+    color: #FFFFFF;
+    margin-left: 300px;
+    width: 200;
+    padding-bottom: 10px;
+}
+
+#commentDiv{
+    float:right;
+    margin-right: 200px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+*/
+
+/*CSS Section for Login*/
+
+#loginSection{
+   color: #FFFFFF;
+    width: 285px;
+    padding-left: 20px;
+    margin-right: 20px;
+    float:left;
+}
+
+h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+/*    height: 20x;*/
+}
+
+#CreateAccount{
+    color: #FFFFFF;
+    padding-left: 20px;
+    float:left;
+    
+}
+
+#noAccount{
+    padding-top: 20px;
+}
+
+#loginTable{
+    border-style: none;
+}
+
+#loginForm{
+    float:left;
+}
+
+#accountForm{
+width: 350px;
+}
+
+/*Welcome Page*/
+#loginWel{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+}
