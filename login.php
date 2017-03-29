@@ -122,7 +122,7 @@
                 <div id = "noAccount">
                     <?php
                         if(isset($_SESSION['username']) && isset($_SESSION['account']['registered'])){
-                            echo "You successfully registered! You can now log in to start creating your";
+                            echo "You successfully registered! You can now log in to start creating your own archive!";
                             unset($_SESSION['acount']['registered']);
                         }
                         if(isset($_SESSION['whoops']['firstName'])){
@@ -144,6 +144,10 @@
                         if(isset($_SESSION['whoops']['noUsername'])){
                             echo "How am I supposed to know who you are without a username?";
                             unset($_SESSION['whoops']['noUsername']);
+                        }
+                        if(isset($_SESSION['whoops']['usernameExists'])){
+                            echo "Sorry! That username's been taken.";
+                            unset($_SESSION['whoops']['usernameExists']);
                         }
                         if(isset($_SESSION['whoops']['noPassword'])){
                             echo "Passwords helps protect you from dragons trying to steal your book archive.";

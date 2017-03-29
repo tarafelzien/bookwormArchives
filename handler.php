@@ -33,9 +33,7 @@
         }elseif(strlen($password) < 5){
             $_SESSION['whoops']['shortPass'] = "TRUE";
         }else{
-            if(($dao->validAccount($email, $username)) == FALSE){
-                $_SESSION['whoops']['invalidEmail'] = "TRUE";
-            }else{
+            if(($dao->validAccount($email, $username)) == TRUE){
                 unset($_SESSION['inputs']);
                 unset($_SESSION['whoops']['firstName']);
                 $dao->createAccount($firstName, $lastName, $email, $username, $password);
