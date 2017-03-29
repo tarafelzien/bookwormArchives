@@ -78,6 +78,13 @@
                             unset($_SESSION['whoops']['authorError']);
                         }
                     ?>
+                    
+                    <?php
+                        if(isset($_SESSION['whoops']['bookExists'])){
+                            echo "This book already exists in your archive.";
+                            unset($_SESSION['whoops']['bookExists']);
+                        }
+                    ?>
                 
                 </span>
             </div>
