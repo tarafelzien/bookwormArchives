@@ -76,12 +76,14 @@
     $bookReleaseDate = trim(htmlentities($_POST['releaseDate']));
     $dateRead = trim(htmlentities($_POST['dateRead']));
     $genre = trim(htmlentities($_POST['genre']));
+    $thoughts = trim(htmlentities($_POST['thoughts']));
     $readyn = trim(htmlentities($_POST['readyn']));
     $_SESSION['bookInputs']['bookTitle'] = $bookTitle;
     $_SESSION['bookInputs']['author'] = $author;
     $_SESSION['bookInputs']['bookReleaseDate'] = $bookReleaseDate;
     $_SESSION['bookInputs']['dateRead'] = $dateRead;
     $_SESSION['bookInputs']['genre'] = $genre;
+    $_SESSION['bookInputs']['thoughts'] = $thoughts;
     $_SESSION['bookInputs']['readyn'] = $readyn;
     if(!isset($bookTitle) || $bookTitle == ''){
         $_SESSION['whoops']['bookTitleError'] = "TRUE";
@@ -90,7 +92,7 @@
     }else{
         unset($_SESSION['whoops']['bookTitleError']);
         unset($_SESSION['whoops']['authorError']);
-        $dao->addBook($bookTitle, $author, $bookReleaseDate, $dateRead, $genre, $readyn);
+        $dao->addBook($bookTitle, $author, $bookReleaseDate, $dateRead, $genre, $thoughts, $readyn);
     }
     header("Location:archive.php");
     }

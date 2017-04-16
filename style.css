@@ -193,7 +193,8 @@ th, td{
     color: #FFFFFF;
     float:right;
     margin-top: 22px;
-    width: 300px;
+    margin-right: 22px;
+    width: 400px;
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
 }
@@ -206,6 +207,11 @@ table.formTable{
     display: inline-block;
     font-size: 12px;
     border-collapse:collapse
+}
+
+#bookError{
+    float:left;
+    
 }
 
 #formTitle{

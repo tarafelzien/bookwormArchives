@@ -26,11 +26,13 @@
     <body>
         <div class="outsideDiv">
                 <div id = "inputBookForm">
+<!--
                 <div id = "formTitle">
                     <h3>Add a Book</h3>
                 </div>
+-->
                 <table id = 'formTable'>
-                    
+                <h3>Add a Book</h3>
                 <form  method="POST" action="handler.php">
                     
                     <tr>
@@ -57,14 +59,16 @@
                         <td>Genre:</td>
                         <td><input type= "text" <?php if(isset($_SESSION['whoops']['authorError'])||isset($_SESSION['whoops']['bookTitleError'])){ ?> value = "<?php echo trim($_SESSION['bookInputs']['genre']); } ?>" name = "genre"></td>
                     </tr>
-                    
+                     <tr>
+                        <td>Thoughts:</td>
+                        <td><input type= "text" <?php if(isset($_SESSION['whoops']['authorError'])||isset($_SESSION['whoops']['bookTitleError'])){ ?> value = "<?php echo trim($_SESSION['bookInputs']['thoughts']); } ?>" name = "thoughts"></td>
+                    </tr>
                     <tr>
                         <td><input type = "radio" name = "readyn" value = "1"
                                    <?php if(isset($_SESSION['whoops']['authorError'])||isset($_SESSION['whoops']['bookTitleError']) && $_SESSION['bookInputs']['readyn'] == 1){ echo "checked"; } ?>
-                        > Read</td>
+                       checked > Read</td>
                         <td><input type = "radio" name = "readyn" value = "2"<?php if(isset($_SESSION['whoops']['authorError'])||isset($_SESSION['whoops']['bookTitleError']) && $_SESSION['bookInputs']['readyn'] == 2){ echo "checked"; } ?>> Want to Read</td>
                     </tr>
-                    
                     <tr><td><input type = "submit" name ="bookForm" value = "Add"></td></tr>
                 </form>
                 </table>
@@ -119,7 +123,6 @@
             <li class = "centerText">&#x24B8;2017 Tara Felzien</li>
             <li> <a href = "mainPage.php">Home Page</a></li>
             <li> <a href="archive.php">My Archive</a>
-            <li> <a href="publicArchives.php">Public Archives</a>
             <li> <a href="aboutUs.php">About Us</a></li>
         </div>
     </body>

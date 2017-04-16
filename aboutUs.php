@@ -29,7 +29,6 @@
             <li class = "centerText">&#x24B8;2017 Tara Felzien</li>
             <li><a href = "mainPage.php">Home Page</a></li>
             <li> <a href="archive.php">My Archive</a>
-            <li> <a href="publicArchives.php">Public Archives</a>
             <li> <a href="aboutUs.php">About Us</a></li>
         </div>
     </body>

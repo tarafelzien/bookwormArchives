@@ -1,6 +1,8 @@
 <?php session_start(); ?>
 	<head>
-		<link rel="stylesheet" href="style.css"/>
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link rel="stylesheet" href="style.css"/>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
