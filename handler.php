@@ -1,6 +1,5 @@
 <?php
     session_start();
-
     require_once 'classes/dao.php';
     require_once 'classes/render.php';
     $dao = new dao();
@@ -10,7 +9,7 @@
         $lastName = trim(htmlentities($_POST['lastName']));
         $email = trim(htmlentities($_POST['email']));
         $username = trim(htmlentities($_POST['username']));
-        $password = trim(htmlentities($_POST['password']));
+        $password = hash("sha256", trim(htmlentities($_POST['password']) . "fKd93Vmz!k*dAv5029Vkf9$3Aa"));
         $_SESSION['inputs']['firstName'] = $firstName;
         $_SESSION['inputs']['lastName'] = $lastName;
         $_SESSION['inputs']['email'] = $email;
@@ -49,7 +48,7 @@
 
     if(isset($_POST['Login'])){
         $username = trim(htmlentities($_POST['username']));
-        $password = trim(htmlentities($_POST['password']));
+         $password = hash("sha256", trim(htmlentities($_POST['password']) . "fKd93Vmz!k*dAv5029Vkf9$3Aa"));
         $_SESSION['inputs']['userLogin'] = $username;
         if(!isset($username) || $username == ''){
             $_SESSION['whoops']['noLoginUser'] = "TRUE";
